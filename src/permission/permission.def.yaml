@@ -1,0 +1,34 @@
+- role:
+    name: superAdmin
+    description: super admin
+    children:
+      - role:
+          name: admin
+          description: All the permissions of the administrator
+          children:
+              - role:
+                  name: userAdmin
+                  description: To admin users
+              - role:
+                  name: nftAdmin
+                  description: To admin nft
+              - role:
+                  name: didAdmin
+                  description: To admin did
+      - role:
+          name: userAll
+          description: All the permissions of the user
+          children:
+            - role:
+                name: userInfo
+                description: To get user info
+            - role:
+                name: orderInfo
+                description: To get order info
+            - role:
+                name: productInfo
+                description: To get product info
+            - role:
+                name: userDID
+                description: To get user did
+
