@@ -1,11 +1,10 @@
 // user.adapter.ts
 export interface User {
-    id: number;
+    id: string;
     username: string;
     password: string;
-    }
+  }
 
-    
 export interface UserAdapter {
-    authenticate(username: string, password: string): Promise<User & {token: string}| null>;
+    authenticate(username: string, password: string): Promise<{token: string}| null>;
     }
