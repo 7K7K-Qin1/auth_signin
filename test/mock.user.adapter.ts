@@ -8,7 +8,7 @@ export class MockUserAdapter implements UserAdapter {
     // 这是一个示例，始终返回一个有效的 token
     const token = 'token';
 
-    if (username === 'john_doe' && password === 'password') {
+    if (username === 'Tom QIN' && password === 'password') {
       return { token };
     } else {
       return null;
